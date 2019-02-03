@@ -22,7 +22,10 @@ libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-jackson" % "3.2.11",
   "org.json4s" %% "json4s-core" % "3.2.11",
   "org.json4s" %% "json4s-ast" % "3.2.11",
-  "org.elasticsearch" %% "elasticsearch-spark-20" % "5.4.3"
+  "org.elasticsearch" %% "elasticsearch-spark-20" % "5.4.3",
+  "junit" % "junit" % "4.12" % Test,
+  "org.assertj" % "assertj-core" % "3.9.0" % Test,
+  "org.scalatest" %% "scalatest" % "3.0.4" % Test
 )
 
 assemblyMergeStrategy in assembly := {
